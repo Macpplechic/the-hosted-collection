@@ -1,42 +1,44 @@
-# Squarespace Custom Code
+# Brand Identity
 
-Custom code used across the Squarespace site for The Hosted Collection.
+The Hosted Collection brand is built around warmth, intention, and quiet luxury. Every design decision — color, type, spacing — should feel like the properties themselves: considered, calm, and memorable.
 
-## Footer — inline style fix
+---
 
-Squarespace's footer renders inconsistently across templates when custom fonts are applied. Use inline styles on the footer wrapper to force consistent rendering:
+## Color palette
 
-```html
-<div style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: #3B2A1A; letter-spacing: 0.02em;">
-  <!-- footer content -->
-</div>
-```
+| Name | Hex | Usage |
+|---|---|---|
+| Espresso | `#3B2A1A` | Primary text, headings |
+| Terracotta | `#C8644A` | CTAs, accents, widget color |
+| Warm Gold | `#C9A84C` | Highlights, icons |
+| Cream | `#F5F0E8` | Backgrounds, cards |
+| Taupe | `#A89880` | Secondary text, borders |
 
-## Google Fonts import
+---
 
-Add to **Settings → Advanced → Code Injection → Header**:
+## Typography
 
-```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-```
+| Role | Font | Weight |
+|---|---|---|
+| Headings | Cormorant Garamond | 300 (Light), 300 Italic |
+| Body | DM Sans | 300, 400, 500 |
 
-## CSS overrides
+Cormorant Garamond at light weight gives the brand its editorial, luxury feel. DM Sans keeps body copy clean and readable at small sizes.
 
-Add to **Design → Custom CSS**:
+---
 
-```css
-/* Headings */
-h1, h2, h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  letter-spacing: 0.04em;
-}
+## Voice
 
-/* Body */
-body, p, a {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-}
-```
+- Warm but not precious
+- Specific, not generic
+- Hosts who care, not a corporation
+- Write like you're recommending your favorite restaurant to a friend who has good taste
+
+---
+
+## Logo usage
+
+- Minimum size: 120px wide
+- Clear space: equal to the height of the wordmark on all sides
+- Never stretch, rotate, or recolor
+- Preferred background: Cream `#F5F0E8` or white
